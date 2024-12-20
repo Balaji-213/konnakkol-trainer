@@ -4,14 +4,14 @@ In this React Native application, I’ve structured the app around two key scree
 
 ## Features
 
-Countdown Timer: Before starting the practice, a countdown is shown to prepare the user.
-Lesson Sounds: The screen dynamically loads lesson sounds based on a selected folder.
-Metronome: The metronome sound is played in sync with the lessons to help users keep time.
-Random Mode: Toggle between playing lessons in a random order or a fixed order.
-Tempo Control: Users can practice at a user-defined tempo (BPM).
-Sound Management: Sounds are dynamically loaded and unloaded, preventing memory leaks.
-Prevents Navigation: If music is playing, the user is prompted to stop the music before navigating away from the screen.
-Graceful Cleanup: Ensures all audio resources are stopped and cleaned up when the screen is left or the practice is stopped.
+**Countdown Timer**: Before starting the practice, a countdown is shown to prepare the user.
+**Lesson Sounds**: The screen dynamically loads lesson sounds based on a selected folder.
+**Metronome**: The metronome sound is played in sync with the lessons to help users keep time.
+**Random Mode**: Toggle between playing lessons in a random order or a fixed order.
+**Tempo Control**: Users can practice at a user-defined tempo (BPM).
+**Sound Management**: Sounds are dynamically loaded and unloaded, preventing memory leaks.
+**Prevents Navigation**: If music is playing, the user is prompted to stop the music before navigating away from the screen.
+**Graceful Cleanup**: Ensures all audio resources are stopped and cleaned up when the screen is left or the practice is stopped.
 
 ## Requirements
 
