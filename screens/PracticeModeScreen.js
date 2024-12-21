@@ -135,8 +135,8 @@ const PracticeModeScreen = ({ route }) => {
         try {
             if (cycle % 2 === 0) {
                 await Promise.all([
-                    metronomeSounds[fileIndex].setRateAsync(rate),
-                    lessonSounds[fileIndex].setRateAsync(rate),
+                    metronomeSounds[fileIndex].setRateAsync(rate, true),
+                    lessonSounds[fileIndex].setRateAsync(rate, true),
                 ]);
     
                 await Promise.all([
@@ -154,7 +154,7 @@ const PracticeModeScreen = ({ route }) => {
                 }, duration);
                 timeoutRefs.push(timeoutId); // Track this timeout
             } else {
-                await metronomeSounds[fileIndex].setRateAsync(rate);
+                await metronomeSounds[fileIndex].setRateAsync(rate, true);
                 await metronomeSounds[fileIndex].playAsync();
     
                 const timeoutId = setTimeout(async () => {
